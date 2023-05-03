@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+    color: #000000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 1021px;
+    width: 600px;
+    
+}
+
+/* HEADER PART */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 167px;
+    background: url('Images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
+    color: #fff;
+}
+
+header h1 {
+    margin: 46px 46px 9px;
+    font-size: 39px;
+}
+
+header p {
+    margin: 0 0 70px 46px;
+    font-style: normal;
+    font-size: 22.42px;
+}
+
+/* SECTION PART */
+
+.item-container {
+    display: flex;
+
+}
+
+.food-emoji{
+font-size: 89px;
+transform: rotate(-40deg);
+}
+
+.inner-text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+.food-title{
+font-size: 28px;
+margin-bottom: 0;
+}
+
+.food-description{
+font-size: 16px;
+color: #8B8B8B;
+margin: 8.8px 0;
+}
+
+.food-price {
+    font-size: 20px;
+    margin: 0;
+}
+.food-btn{
+/* width: 50px;
+height: 50px; */
+/* border: 1.5px solid #DEDEDE;
+border-radius: 50%; */
+/* font-size: 270px; */
+}
