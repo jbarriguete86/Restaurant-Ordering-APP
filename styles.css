@@ -74,10 +74,14 @@ margin: 8.8px 0;
     font-size: 20px;
     margin: 0;
 }
-.food-btn{
-/* width: 50px;
-height: 50px; */
-/* border: 1.5px solid #DEDEDE;
-border-radius: 50%; */
-/* font-size: 270px; */
+
+i {
+    font-size: 250px;
 }
+/* .food-btn{
+width: 50px;
+height: 50px; 
+/* border: 1.5px solid #DEDEDE;
+border-radius: 50%; 
+ font-size: 270px; 
+} */
