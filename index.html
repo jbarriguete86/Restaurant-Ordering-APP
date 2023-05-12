@@ -9,12 +9,7 @@
     <!--GOOGLE FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-    <!-- FONT AWESOME LIBRARY -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
 </head>
 <body id="body">
     <div class="container">
@@ -22,22 +17,94 @@
         <h1>Jimmy's Diner</h1>
         <p>The best burguer and pizza in town</p>
         </header>
-        <script src="https://kit.fontawesome.com/8a39d916ea.js" crossorigin="anonymous"></script>
-        <section class="main-section">
+        <section id="main-section">
             <div class="item-container">
-                <p class="food-emoji">🍕</p>
+                <div class="emoji-container">
+                    <p class="food-emoji pizza">🍕</p>
+                </div>
                 <div class="inner-text-cont">
-                <h1 class="food-title">Pizza</h1>
-                <p class="food-description">pepperoni, mushrom, mozarella</p>
-                <h3 class="food-price">$14</h3>
+                    <h1 class="food-title">Pizza</h1>
+                    <p class="food-description">pepperoni, mushrom, mozarella</p>
+                    <h3 class="food-price">$14</h3>
                 </div>
-                <i class="fa-light fa-map-pin"></i>
+                <div class="add-container">
+                    <h1 class="add-btn"><a class="add-link" href="#">+</a></h1>
                 </div>
+            </div>
+
+            <div class="item-container">
+                <div class="emoji-container">
+                    <p class="food-emoji">🍔</p>
+                </div>
+                <div class="inner-text-cont">
+                    <h1 class="food-title">Hamburger</h1>
+                    <p class="food-description">beef, cheese, lettuce</p>
+                    <h3 class="food-price">$12</h3>
+                </div>
+                <div class="add-container">
+                    <h1 class="add-btn"><a class="add-link" href="#">+</a></h1>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="emoji-container">
+                    <p class="food-emoji">🍺</p>
+                </div>
+                <div class="inner-text-cont">
+                    <h1 class="food-title">Hamburger</h1>
+                    <p class="food-description">grain, hops, yeast, water</p>
+                    <h3 class="food-price">$12</h3>
+                </div>
+                <div class="add-container">
+                    <h1 class="add-btn"><a class="add-link" href="#">+</a></h1>
+                </div>
+            </div>
         </section>
-        <footer></footer>
+
+        <section id="ordered-items" class="order">
+            <div class="title">
+                <h1>Your order</h1>
+            </div>
+            <div class="items-added">
+                <div class="order-item">
+                    <h1>Pizza</h1>
+                    <p>remove</p>
+                    <h3>$14</h3>
+                </div>
+            </div>
+
+            <div class="items-added">
+                <div class="order-item">
+                    <h1>Beer</h1>
+                    <p>remove</p>
+                    <h3>$12</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="total-container">
+                <h1>Total Price</h1>
+                <h3>$26</h3>
+            </div>
+            <div class="green-btn-container">
+                <a href="#" class="green-btn-text">Complete order</a>
+            </div> 
+        </section>
+        
+        <section id="payment-details" class="payment-container">
+            <h1>Enter card details</h1>
+            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="Enter card number">
+            <input type="password" placeholder="Enter CVV">
+            <div class="green-btn-container">
+                <a href="#" class="green-btn-text">Pay</a>
+            </div>
+
+
+        </section>
 
     </div>
 
 <script src="index.js" type="module"></script>
 </body>
 </html>
+

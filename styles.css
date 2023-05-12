@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
     margin: auto 0;
     justify-content: center;
     align-items: center;
@@ -14,10 +13,14 @@ body {
 .container{
     display: flex;
     flex-direction: column;
-    height: 1021px;
-    width: 600px;
-    
+    width: 600px; 
 }
+
+p{
+    color: #8B8B8B;
+}
+
+
 
 /* HEADER PART */
 
@@ -43,22 +46,47 @@ header p {
 
 /* SECTION PART */
 
-.item-container {
+.item-container,
+.inner-text-cont,
+.add-container{
     display: flex;
+}
 
+.food-emoji,
+.food-price,
+.add-link{
+    margin: 0;
+}
+
+.item-container {
+    width: 508px;
+    height: 140px;
+    border-bottom: 1px solid #D2D2D2;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+.emoji-container{
+    height: 89px;
 }
 
 .food-emoji{
-font-size: 89px;
-transform: rotate(-40deg);
+    width: 70px;
+    font-size: 70px;
+}
+
+.pizza {
+    transform: rotate(-40deg);
 }
 
 .inner-text-cont {
-    display: flex;
+    width: 33%;
     flex-direction: column;
     justify-content: flex-start;
     vertical-align: middle;
+    margin-left: 31px;
 }
+
 .food-title{
 font-size: 28px;
 margin-bottom: 0;
@@ -72,16 +100,140 @@ margin: 8.8px 0;
 
 .food-price {
     font-size: 20px;
-    margin: 0;
 }
 
-i {
-    font-size: 250px;
+.add-container{
+    align-items:center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border:1.5px solid #DEDEDE;
+    border-radius: 50%;
+    margin-left: auto;
 }
-/* .food-btn{
-width: 50px;
-height: 50px; 
-/* border: 1.5px solid #DEDEDE;
-border-radius: 50%; 
- font-size: 270px; 
-} */
+
+.add-link{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+.add-link:hover,
+.add-container:hover {
+    cursor: pointer;
+    background-color: #DEDEDE;
+}
+
+/* ITEMS ORDERED */
+.order{
+    margin: auto;
+    width: 508px;
+    min-height: 319px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.items-added{
+    display: flex;
+    margin: 0 auto;
+}
+
+.order-item{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.order-item h1,
+.order-item p,
+.order-item h3{
+    margin:0;
+}
+
+.order-item p {
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.order-item h3,
+.total-container h3 {
+    margin-left: auto;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #393333;
+}
+
+.total-container{
+    margin-top: 14px;
+    display: flex;
+}
+
+.total-container h1{
+    font-size: 28px;
+}
+
+/*all the green btn */
+
+.green-btn-container{  
+    margin: 0 auto;
+    margin-top: 53px;
+    box-sizing: border-box;
+    width: 508px;
+    height: 60px;
+    background-color: #16DB99;
+    padding: 18px 175px;
+    text-align: center;
+    
+}
+
+.green-btn-text{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.green-btn-text:hover{
+    cursor: pointer;
+    color:antiquewhite;
+}
+
+/*Paymnet detail pop up window  */
+.payment-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 524px;
+    height: 542px;
+    border:solid 1px #000000; 
+    margin: auto; 
+}
+
+.payment-container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 46.07px;
+}
+
+.payment-container input{
+    width: 475.91px;
+    height: 71.3px;
+    border: 1.3px solid #757575;
+    border-radius: 3.89px;
+    margin: 0 auto 23.22px;
+}
