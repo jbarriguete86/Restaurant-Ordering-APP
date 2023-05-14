@@ -5,24 +5,6 @@ const totalPrice = document.getElementById('total-price')
 const closeBtn = document.getElementById('close-modal-btn')
 let priceArray=[]
 
-function calculateTotal() {
-  let total = 0;
-  for (let i = 0; i < priceArray.length; i++) {
-    total += priceArray[i];
-  }
-  return total;
-}
-
-completeBtn.addEventListener('click', function(){
-    const Total = calculateTotal()
-    if (Total === 0){
-         console.log("cannot complete as you don't have anything in the cart")
-    } else {
-        document.getElementById('payment-details').classList.remove('modal')
-    }
-})
-
-
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
         handleAddClick(e.target.dataset.add)
@@ -50,6 +32,23 @@ priceArray.push(chosenMenu.price)
 orderContainer.innerHTML += itemFeedHtml
  totalPrice.innerHTML = `$${calculateTotal()}` 
 } 
+
+function calculateTotal() {
+    let total = 0;
+    for (let i = 0; i < priceArray.length; i++) {
+      total += priceArray[i];
+    }
+    return total;
+  }
+  
+  completeBtn.addEventListener('click', function(){
+      const Total = calculateTotal()
+      if (Total === 0){
+           console.log("cannot complete as you don't have anything in the cart")
+      } else {
+          document.getElementById('payment-details').classList.remove('modal')
+      }
+  })
 
 
 function getFeedHtml(){  
