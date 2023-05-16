@@ -23,15 +23,14 @@ p{
 }
 
 
-
 /* HEADER PART */
 
 header {
+    background: url('Images/title1.png');
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 167px;
-    background: url('Images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
     color: #fff;
 }
 
@@ -68,7 +67,6 @@ header p {
     align-items: center;
     margin: auto;
 }
-
 .emoji-container{
     height: 89px;
 }
@@ -113,8 +111,6 @@ margin: 8.8px 0;
     border:1.5px solid #DEDEDE;
     border-radius: 50%;
     margin-left: auto;
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
 }
 
 .add-link{
@@ -133,6 +129,14 @@ margin: 8.8px 0;
 }
 
 /* ITEMS ORDERED */
+.total-price-container,
+.total-container,
+.items-added,
+.order-item,
+.code-container {
+    display: flex;
+}
+
 .order{
     margin: auto;
     width: 508px;
@@ -144,13 +148,11 @@ margin: 8.8px 0;
 }
 
 .items-added{
-    display: flex;
     margin: 0 auto;
 }
 
 .order-item{
     width: 100%;
-    display: flex;
     justify-content:space-evenly;
     align-items: flex-start;
     margin-bottom: 22px;
@@ -179,11 +181,41 @@ hr{
 
 .total-container{
     margin-top: 14px;
-    display: flex;
+    flex-direction: column;
 }
 
 .total-container h1{
     font-size: 28px;
+}
+
+textarea {
+    display: block;
+    border: 1px solid #8B8B8B;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin: auto;
+    height: 24px;
+    width: 70%;
+}
+
+.code-btn {
+    width:25%;
+    background: #065F46;
+    color:#D2D2D2;
+    text-align: center;
+    padding-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.code-btn:hover{
+    background: #16DB99;
+    cursor: pointer;
+    color: yellow;
 }
 
 /*all the green btn */

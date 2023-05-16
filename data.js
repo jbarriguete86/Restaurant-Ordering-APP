@@ -21,3 +21,22 @@ export const menuArray = [
         id: 2
     }
 ]
+
+export const discountArray =[
+    {
+        name: "Hamburger50",
+        id: "1",
+        value: 50
+    },
+    {
+        name: "Pizza45",
+        id:"0",
+        value: 45
+        
+    },
+    {
+        name:"FreeBeer2023",
+        id:"2",
+        value: 100
+    }
+]

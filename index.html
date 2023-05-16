@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,52 +12,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
 </head>
+
 <body id="body">
     <div class="container">
         <header>
-        <h1>Jimmy's Diner</h1>
-        <p>The best burguer and pizza in town</p>
+            <h1>Jimmy's Diner</h1>
+            <p>The best burguer and pizza in town</p>
         </header>
         <section id="feed">
+            <!-- Here goes the feed -->
         </section>
 
-        <section class="order">
+        <section class="order" id="order">
             <div class="title">
                 <h1>Your order</h1>
             </div>
             <div id="ordered-items-container">
+                <!-- Here goes each added item -->
             </div>
             <hr>
             <div class="total-container">
-                <h1>Total Price</h1>
-                <h3 id="total-price">$0</h3>
+                <div class="code-container" id="code-container">
+                    <textarea placeholder="Enter a discount code if you have one" id="discount-code"></textarea>
+                    <a href="#" class="code-btn" id="code-btn"> Enter code </a>
+                </div>
+
+                <div class="total-price-container">
+                    <h1>Total Price</h1>
+                    <h3 id="total-price">$0</h3>
+                </div>
             </div>
             <div class="green-btn-container" id="complete-order">
                 <a href="#" class="green-btn-text">Complete order</a>
-            </div> 
+            </div>
         </section>
-        
-        <section id="payment-confirmation" class="payment-confirmation-container">
-            <h1>Thanks James! Your order is on its way!</h1>
 
+        <section id="payment-confirmation" class="payment-confirmation-container">
+            <!-- <h1>Thanks James! Your order is on its way!</h1> -->
         </section>
+
         <section id="payment-details" class="modal">
             <div class="payment-container">
                 <div class="close-modal-btn-container">
                     <button class="modal-close-btn" id="modal-close-btn">X</button>
                 </div>
                 <h1>Enter card details</h1>
-                <input type="text" placeholder="Enter your name">
-                <input type="text" placeholder="Enter card number">
-                <input type="password" placeholder="Enter CVV">
-                <div class="green-btn-container">
+                <input type="text" placeholder="Enter your name" id="name-input" required>
+                <input type="text" placeholder="Enter card number" id="card-number" required>
+                <input type="password" placeholder="Enter CVV" id="cvv-number" required>
+                <div class="green-btn-container" id="pay-btn">
                     <a href="#" class="green-btn-text">Pay</a>
                 </div>
             </div>
         </section>
 
     </div>
-<script src="index.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
-</html>
 
+</html>
